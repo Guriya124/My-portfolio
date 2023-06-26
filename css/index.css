@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
+/* hero Section Start  */
+
+.hero-section {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  padding: 15px;
+
+}
+
+.heading h2 {
+  font-size: 3rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  text-align: left;
+
+}
+
+.heading h5 {
+  text-align: left;
+  font-weight: lighter;
+
+}
+
+/* Hero Section Start  */
+
+/* My Bio Start  */
+
+.myBio {
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.about-img {
+  /* border: 2px solid; */
+  border-color: red;
+  border-radius: 100% !important;
+
+}
+
+.btn.btn-primary {
+  background: #4942E4;
+  /* border-color: #5A96E3; */
+}
+
+
+.btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+
+}
+
+
+/* My Bio End  */
+
+
+/* parallax skill Section  start*/
+@keyframes progress {
+  0% {
+    --percentage: 0;
+  }
+
+  100% {
+    --percentage: var(--value);
+  }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+[role="progressbar1"] {
+  --percentage: var(--value);
+  --primary: #F86F03;
+  --secondary: #FFA41B;
+  --size: 200px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar1"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar1"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+
+.p12 {
+  display: inline-block;
+  text-align: center;
+}
+
+
+[role="progressbar2"] {
+  --percentage: var(--value);
+  --primary: #525FE1;
+  --secondary: #adf;
+  --size: 200px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar2"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar2"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+
+
+[role="progressbar3"] {
+  --percentage: var(--value);
+  --primary: #712cf9;
+  --secondary: #adf;
+  --size: 200px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar3"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar3"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+
+
+
+[role="progressbar4"] {
+  --percentage: var(--value);
+  --primary: #FFD95A;
+  --secondary: #FFF7D4;
+  --size: 200px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar4"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar4"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+
+
+.myskill h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+
+}
+
+.myskill h5 {
+  text-align: center;
+  color: white;
+}
+
+/* Skill progress bar end */
+
+
+.parallax {
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* protfolio skill section start */
+.protofolio h2 {
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+}
+
+.protofolio h5 {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+}
+.btn-group{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* protfolio section end */
+
+/* form Start */
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+/* form end  */
+
+
+
+/* contact-us section start */
+
+#contact{
+  margin-top: 70px;
+}
+.contact-us h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: 'Nunito Sans', sans-serif;
+  
+}
+.contact-us h5 {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.massage-btn a {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.fa-location-dot {
+  font-size: 20px;
+}
+
+.fa-location-dot {
+  margin: 10px;
+}
+
+.addr {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.fa-phone {
+  margin: 5px;
+}
+
+.fa-envelope {
+  margin: 5px;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+/* contact-us section end */
+
+/* footer start */
+
+.footer{
+  margin-top: 70px;
+}
+.footer-head{
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
